@@ -1,0 +1,54 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+.menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 119px;
+    translate: 100%;
+    width: 258px;
+    height: 100vh;
+    background-color: var(--color-menu);
+    flex-direction: column;
+    padding: 144px 29px 0 24px ;
+    @include responsive (tablet){
+        width: 431px;
+        left: 100%;
+        translate: -100%;
+        flex-direction: row;
+        background-color: transparent;
+        height: 0;
+        padding-block: 39px 55px ;
+        padding-inline: 0;
+        justify-content: space-between;
+    }
+  }
+.show{
+    translate: 0;
+}
+.button-menu {
+    position: fixed;
+    left: calc(100% - 300px);
+    top: 93vh;
+    margin-left: auto;
+    width: 30.41px;
+    height: 30.41px;
+    z-index: 1;
+    @include responsive (tablet){
+        display: none;
+    }
+  }
+.menu__item{
+    font-size: var(--title-xs);
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.menu__link{
+    font-family: "Nunito Sans", sans-serif;
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    @include hover{
+        color: var(--color-orange);
+    }
+}

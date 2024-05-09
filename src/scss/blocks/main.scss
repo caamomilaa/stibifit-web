@@ -1,0 +1,10 @@
+@use '../mixins/responsive.scss' as *;
+.main{
+    padding-inline: 16px;
+    @include responsive (tablet){
+        padding-inline: 40px;
+    }
+    @include responsive (laptop){
+        padding-inline: 80px;
+    }
+}

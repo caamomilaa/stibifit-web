@@ -1,0 +1,50 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.button{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 12px;
+    color: var(--color-white);
+    font-size: 0.8125rem;
+    line-height: 20px;
+    width: 86px;
+    text-align: center;
+    @include responsive (tablet){
+        font-size: 1.4375rem;
+        padding: 16px;
+        width: 140px;
+    }
+    &--orange{
+        background-color: var(--color-orange);
+        @include hover {
+            background-color: var(--color-hover);
+        }
+    }
+    &--ghost{
+        border: 2px solid var(--color-orange);
+        @include hover {
+            border: 2px solid var(--color-hover);
+        }
+    }
+    &--form{
+        background-color: var(--color-orange);
+        border: none;
+        @include hover {
+            background-color: var(--color-hover);
+        }
+    }
+    &__container{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        @include responsive (tablet){
+            gap: 32px;
+        }
+    }
+    &--sub{
+        width: 100%;
+    }
+}

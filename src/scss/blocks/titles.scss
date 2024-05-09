@@ -1,1 +1,41 @@
-
+@use '../mixins/responsive.scss' as *;
+.title{
+    margin: 0;
+    &--xl{
+        font-size: 3.8125rem;
+    }
+    &--l{
+        font-size: 3.0625rem;
+    }
+    &--m{
+        font-size: 2.4375rem;
+        @include responsive (tablet){
+            font-size: 2.75rem;
+        }
+    }
+    &--s{
+        font-size: 1.9375rem;
+    }
+    &--xs{
+        font-size: 1.5625rem;
+        @include responsive (tablet){
+            font-size: 3.4375rem;
+        }
+    }
+    &--white{
+        color: var(--color-white);
+    }
+    &--orange{
+        color: var(--color-orange); 
+    }
+    &--nunito{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+    }
+    &--racing{
+        font-family: "Racing Sans One", sans-serif;
+    }
+    &--plans{
+        font-size: 1.5625rem;
+    }
+}

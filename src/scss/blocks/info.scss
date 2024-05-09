@@ -1,0 +1,28 @@
+@use '../mixins/responsive.scss' as *;
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 16px;
+    @include responsive (tablet){
+        flex-direction: row;
+        gap: 16px;
+        padding-top: 80px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @include responsive (tablet){
+           width: 369px;
+        }
+        @include responsive (laptop){
+            width: 631px;
+            justify-content: center;
+         }
+    }
+    &__img{
+        height: 100%;
+        width: 100%;
+    }
+}

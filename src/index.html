@@ -1,24 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png">
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <title>stibifit-web</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__title">Título</h1>
-      <p class="card__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis
-        mollitia sequi, quae voluptatem, eligendi, nam repudiandae cupiditate ad
-        consequatur natus omnis ducimus pariatur excepturi in magni voluptas
-        repellat quasi?
-      </p>
-      <a class="card__button" href="">boton</a>
-    </div>
+    <header class="header">
+      <div class="header__top">
+        <p class="logo">stibifit_<p>
+        <a class="button-menu" id="button-menu"  href="#">
+          <img src="./assets/images/icon-menu.svg" alt="menu">
+        </a>
+        <nav>
+          <ul id="menu" class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Sobre mí</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Testimonios</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Planes</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contacto</a>
+            </li>
+          </ul>
+          <a href="#">
+            <img class="icon__user-small" src="./assets/images/icon-user-small.svg" alt="user">
+          </a>
+        </nav>
+      </div>
+      <div class="header__info">
+        <div class="header__text">
+          <h1 class="title title--nunito title--white title--xs">Conviértete en tu mejor</h1>
+          <span class="title title--racing title--orange title--xs">versión</span>
+        </div>
+        <div class="button__container">
+          <a class="button button--orange" href="#">Planes</a>
+          <a class="button button--ghost" href="#">Sobre mí</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="info">
+        <div class="info__text">
+          <h2 class="title title--orange title--racing title--m">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <p class="text text--white text--nunito">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a class="button button--orange" href="#">Apúntate</a>
+        </div>
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./assets/images/img-main-laptop.png">
+          <source media="(min-width: 768px)" srcset="./assets/images/img-main-tablet.png">
+          <source media="(min-width: 300px)" srcset="./assets/images/img-main-mobile.png">
+          <img class=info__img src="./assets/images/img-main-mobile.png" alt="">
+        </picture>
+      </div>
+      <div class="about">
+        <h2 class="title title--orange title--racing title--m">Sobre mí</h2>
+        <div class="about__text">
+          <p class="text text--white text--nunito">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./assets/images/img-alberto-laptop.png">
+            <source media="(min-width: 768px)" srcset="./assets/images/img-alberto-tablet.png">
+            <source media="(min-width: 300px)" srcset="./assets/images/img-alberto-mobile.png">
+            <img class=about__img src="./assets/images/img-alberto-mobile.png" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="testimonials">
+        <h2 class="title title--orange title--racing title--m">Testimonios</h2>
+        <div class="testimonials__container">
+          <div class="testimony">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./assets/images/img-javi-laptop.png">
+              <source media="(min-width: 768px)" srcset="./assets/images/img-javi-tablet.png">
+              <source media="(min-width: 300px)" srcset="./assets/images/img-javi-mobile.png">
+              <img class=testimony__img src="./assets/images/img-javi-mobile.png" alt="">
+            </picture>
+            <p class="text text--white text--l text--nunito">Javi, 22</p>
+            <p class="text text--white text--nunito">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="testimony">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./assets/images/img-miguel-laptop.png">
+              <source media="(min-width: 768px)" srcset="./assets/images/img-miguel-tablet.png">
+              <source media="(min-width: 300px)" srcset="./assets/images/img-miguel-mobile.png">
+              <img class=testimony__img src="./assets/images/img-miguel-mobile.png" alt="">
+            </picture>
+            <p class="text text--white text--l text--nunito">Miguel, 22</p>
+            <p class="text text--white text--nunito">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sub">
+        <h2 class="title title--orange title--racing title--m">Planes</h2>
+        <div class="subs__container">
+          <div class="sub__container">
+            <div class="sub__title">
+              <h3 class="title title--plans title--white title--nunito">Básico</h3>
+            </div>
+            <div class="sub__item ">
+              <div class="sub__price">
+                <span class="title title--m title--white title--racing">20€</span>
+                <span class="text text--s text--white text--nunito">/ mes</span>
+              </div>
+              <div class="sub__info">
+                <ul class="sub__list">
+                  <li class="text text--s text--nunito text--white">2 semanas de entrenamiento personalizado.</li>
+                  <li class="text text--s text--nunito text--white">1 asesoría al mes.</li>
+                </ul>
+              </div>
+              <a class="button button--orange button--sub" href="#">Seleccionar</a>
+            </div>
+          </div>
+          <div class="sub__container sub__container--purple">
+            <div class="sub__title sub__title--purple">
+              <h3 class="title title--plans title--white title--nunito">Standart</h3>
+              <span class="text--l text--nunito text--white sub__popular">Popular</span>
+            </div>
+            <div class="sub__item">
+              <div class="sub__price">
+                <span class="title title--m title--white title--racing">40€</span>
+                <span class="text text--s text--white text--nunito">/ mes</span>
+              </div>
+              <div class="sub__info">
+                <ul class="sub__list">
+                  <li class="text text--s text--nunito text--white">3 semanas de entrenamiento personalizado.</li>
+                  <li class="text text--s text--nunito text--white">2 asesorías al mes.</li>
+                </ul>
+              </div>
+              <a class="button button--orange button--sub" href="#">Seleccionar</a>
+            </div>
+          </div>
+          <div class="sub__container">
+            <div class="sub__title">
+              <h3 class="title title--plans title--white title--nunito">Premium</h3>
+            </div>
+            <div class="sub__item sub__item--padding">
+              <div class="sub__price">
+                <span class="title title--m title--white title--racing">60€</span>
+                <span class="text text--s text--white text--nunito">/ mes</span>
+              </div>
+              <div class="sub__info">
+                <ul class="sub__list">
+                  <li class="text text--s text--nunito text--white">3 semanas de entrenamiento personalizado.</li>
+                  <li class="text text--s text--nunito text--white">2 asesorías al mes.</li>
+                  <li class="text text--s text--nunito text--white">Plan de nutrición.</li>
+                </ul>
+              </div>
+              <a class="button button--orange button--sub" href="#">Seleccionar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h2 class="title title--orange title--racing title--m">¿Necesitas más información?</h2>
+        <p class="text text--white text--nunito">Nos ponemos en contacto contigo.</p>
+        <div class="form" id="contact">
+          <div class="form__container">
+            <div class="form__field">
+              <input
+                placeholder="Nombre"
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+              />
+            </div>
+            <div class="form__field">
+              <input
+                placeholder="Teléfono"
+                class="form__input"
+                type="text"
+                id="phone"
+                name="phone"
+              />
+            </div>
+            <div class="form__field">
+              <input
+                placeholder="Email"
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+          </div>
+          <div class="form__field form__field--big">
+            <input
+              placeholder="Mensaje"
+              class="form__input"
+              type="text"
+              id="message"
+              name="message"
+            />
+          </div>
+          <input
+          class="button button--form"
+          type="submit"
+          value="Enviar"
+        />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <span class="logo">stibifit_</span>
+      <div class="footer__end">
+          <p class="text text--xs text--white text--nunito">Política de Cookies</p>
+          <p class="text text--xs text--white text--nunito">Protección de Datos</p>
+        <p class="text text--xs text--white text--nunito">Accesibilidad</p>
+      </div>
+    </footer>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

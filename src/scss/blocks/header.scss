@@ -1,0 +1,38 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+.header{
+    height: 100vh;
+    background-image: url(../../assets/images/img-header-laptop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px 91.1px;
+    background-size: 620px 405px;
+    @include responsive (tablet){
+        background-position: -100px 150.1px;
+        background-size: 1200px 1056px;
+    }
+    @include responsive (laptop){
+        background-position: 0 146.1px;
+        background-size: 1440px 884px;
+    }
+    &__top{
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive (tablet){
+            padding: 45.5px 40px 45.5px 40px;
+        }
+        @include responsive (laptop){
+            padding: 43.5px 80px 43.5px 80px;
+        }
+    }
+    &__info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding-block: 200px;
+    }
+}

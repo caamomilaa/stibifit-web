@@ -1,5 +1,21 @@
 @use 'base/normalize.scss';
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
+
 @use 'blocks/body.scss';
-@use 'blocks/card.scss'
+@use 'blocks/header.scss';
+@use 'blocks/menu.scss';
+@use 'blocks/main.scss';
+@use 'blocks/footer.scss';
+
+@use 'blocks/titles.scss';
+@use 'blocks/texts.scss';
+
+@use 'blocks/buttons.scss';
+@use 'blocks/logo.scss';
+
+@use 'blocks/info.scss';
+@use 'blocks/about.scss';
+@use 'blocks/testimonials.scss';
+@use 'blocks/sub.scss';
+@use 'blocks/contact.scss';
