@@ -1,81 +1,86 @@
 @use '../mixins/responsive.scss' as *;
-.sub{
-    padding-block: 40px;
+.sub {
+  padding-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include responsive(tablet) {
+    text-align: center;
+    align-items: center;
+  }
+  &__container {
+    position: relative;
+    z-index: -1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    @include responsive (tablet){
-        text-align: center;
-        align-items: center;
+    border: 2px solid var(--color-lillac);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    gap: 0;
+    &--purple {
+      background-color: var(--color-opacity);
     }
-    &__container{
-        display: flex;
-        flex-direction: column;
-        border: 2px solid var(--color-lillac);
-        border-radius: 8px;
-        text-align: center;
-        align-items: center;
-        gap: 0;
-        &--purple{
-            background-color: var(--color-opacity);
-        }
-        @include responsive (tablet){
-            width: 480px;
-        }
+    @include responsive(tablet) {
+      width: 480px;
     }
-    &__item{
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        align-items: center;
-        padding: 32px 32px 40px 40px;
-        width: 100%;
-        @include responsive (tablet){
-            gap: 32px;
-        }
-        &--padding{
-            @include responsive (tablet){
-                gap: 21px;
-            }
-        }
-    }
-    &__info{
-        text-align: center;
-    }
-    &__list{
-        text-align: left;
-        list-style: circle;
-    }
-    &__title{
-        width: 100%;
-        padding-block: 16px;
-        border-bottom: 2px solid var(--color-lillac);
-        &--purple{
-           padding-block: 16px 0;
-        }
-    }
-    &__popular{
-        margin: 0;
-        display: inline;
-        position: relative;
-        top: 15px;
-        left: 100px;
-        padding: 4px 8px 4px 8px;
-        background-color: var(--color-popular);
-        border-radius: 8px;
-        @include responsive (tablet){
-            left: 150px;
-        }
-    }
-}
-.subs__container{
+  }
+  &__item {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    @include responsive (laptop){
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 24px;
+    align-items: center;
+    padding: 32px 32px 40px 40px;
+    width: 100%;
+    @include responsive(tablet) {
+      gap: 32px;
     }
+    &--padding {
+      @include responsive(tablet) {
+        gap: 21px;
+      }
+    }
+  }
+  &__info {
+    text-align: center;
+  }
+  &__list {
+    text-align: left;
+    list-style: circle;
+  }
+  &__title {
+    width: 100%;
+    padding-block: 16px;
+    border-bottom: 2px solid var(--color-lillac);
+    &--purple {
+      padding-block: 16px 0;
+    }
+  }
+  &__popular {
+    margin: 0;
+    display: inline;
+    position: absolute;
+    top: 25px;
+    left: 240px;
+    padding: 4px 8px 4px 8px;
+    background-color: var(--color-popular);
+    border-radius: 8px;
+    @include responsive(tablet) {
+      left: 350px;
+    }
+    @include responsive(laptop) {
+      left: 300px;
+    }
+  }
+}
+.subs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include responsive(laptop) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+  }
 }
