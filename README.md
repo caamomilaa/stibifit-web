@@ -28,7 +28,7 @@ Si quieres echar un vistazo al proyecto, te recomiendo:
 
 ![Captura del proyecto](https://raw.githubusercontent.com/caamomilaa/stibifit-web/main/design/Captura%20de%20pantalla%202024-05-20%20174321.png)
 ![Captura del proyecto](https://raw.githubusercontent.com/caamomilaa/stibifit-web/main/design/Captura%20de%20pantalla%202024-05-20%20174342.png)
-![Captura del proyecto]([https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true](https://raw.githubusercontent.com/caamomilaa/stibifit-web/main/design/Captura%20de%20pantalla%202024-05-20%20174402.png))
+![Captura del proyecto](https://raw.githubusercontent.com/caamomilaa/stibifit-web/main/design/Captura%20de%20pantalla%202024-05-20%20174402.png)
 
 ## Autor ✒️
 
